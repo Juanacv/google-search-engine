@@ -26,6 +26,7 @@ body {
 
 .right_box  li {
 	padding: 5px;
+	height: 120px;
 }
 
 .right_box li p {
