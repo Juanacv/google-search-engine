@@ -26,7 +26,11 @@ body {
 
 .right_box  li {
 	padding: 5px;
-	line-height: 1.12857;
+}
+
+.right_box li p {
+    line-height: 1.12857;
+    font-size: 12px;
 }
 
 ul {
