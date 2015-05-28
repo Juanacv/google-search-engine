@@ -4,6 +4,11 @@ body {
     background: -moz-linear-gradient(90deg, lightblue, white); /* For Firefox */
     background: linear-gradient(90deg, lightblue, white); 
 }
+
+li h5 {
+	font-weight: 900;
+}
+
 .center_col {
 	margin:20px 24%;
 }	
