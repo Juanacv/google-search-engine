@@ -1,3 +1,9 @@
+body {
+	height: auto;
+    background: -webkit-linear-gradient(45deg, lightblue, white); /* For Chrome */
+    background: -moz-linear-gradient(45deg, lightblue, white); /* For Firefox */
+    background: linear-gradient(45deg, lightblue, white); 
+}
 .center_col {
 	margin:20px 24%;
 }	
@@ -31,8 +37,8 @@ li img {
   float: left;
   margin: 9px;
   border: 5px solid #fff;
- -webkit-transition: box-shadow 0.5s ease;
-  -moz-transition: box-shadow 0.5s ease;
+ -webkit-transition: box-shadow 0.5s ease; /* For Chrome */
+  -moz-transition: box-shadow 0.5s ease; /* For Firefox */
   transition: box-shadow 0.5s ease;
   width: 114px;
   height: 114px;
@@ -40,9 +46,9 @@ li img {
 }
  
 li img:hover {
-	-moz-box-shadow: 0 0 7px #ccc; 
-	-webkit-box-shadow: 0 0 7px #ccc; 
-	box-shadow: 0 0 7px #ccc;
+	-moz-box-shadow: 0 0 10px #CC00FF; /* For Firefox */
+	-webkit-box-shadow: 0 0 10px #CC00FF; /* For Chrome */
+	box-shadow: 0 0 10px #CC00FF;
 }
 
 #imagebox {
