@@ -26,7 +26,7 @@ li h5 {
 }
 
 .right_box {
-	overflow: hidden;
+	overflow: auto;
 }
 
 .right_box  li {

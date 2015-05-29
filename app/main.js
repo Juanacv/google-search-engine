@@ -1,8 +1,4 @@
-define(function (require) {
-    //requering ajaxcall.js module
-    var messages = require('ajaxcall');
-    // Load library to load the data in html
-    var layout = require('layout');
+define(["ajaxcall", "layout"], function (ajaxcall, layout) {
 	var search_button = document.getElementById("search_button");
 	var pagination = document.querySelectorAll("a");
 	
@@ -10,11 +6,11 @@ define(function (require) {
 	search_button.addEventListener("click", function(e) {
 		var query = document.getElementById("query").value;
 			//Check if there is a query string
-			if (query != "") {
+			if (query !== "") {
 				//Get the results form Google Search Api and put them formatted in the web page
-    			messages.getData({callback:
+    			ajaxcall.getData({callback:
     				function(response) { 
-    					if (response=="error") { 
+    					if (response==="error") { 
     						document.getElementById("itembox").style.display = "block"
     						var itembox = document.getElementById("itembox");
     						itembox.innerHTML = '<li><h4>Unable to connect to API server</h4>';
