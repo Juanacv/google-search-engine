@@ -1,9 +1,8 @@
-define(["ajaxcall", "layout"], function (ajaxcall, layout) {
+define(["ajaxcall", "layout","events"], function (ajaxcall, layout,events) {
 	var search_button = document.getElementById("search_button");
-	var pagination = document.querySelectorAll("a");
 	
 	//Event triggered when someone pushes the search button
-	search_button.addEventListener("click", function(e) {
+	search_button.addEventListener("click", function() {
 		var query = document.getElementById("query").value;
 			//Check if there is a query string
 			if (query !== "") {
@@ -11,14 +10,15 @@ define(["ajaxcall", "layout"], function (ajaxcall, layout) {
     			ajaxcall.getData({callback:
     				function(response) { 
     					if (response==="error") { 
-    						document.getElementById("itembox").style.display = "block"
+                			document.getElementById("itembox").style.display = "block";
     						var itembox = document.getElementById("itembox");
     						itembox.innerHTML = '<li><h4>Unable to connect to API server</h4>';
     					}
     					else {
-    						layout.printIt(response, 1, 1);
+    						var totalResults = layout.printIt(response, 1, 1);
+    						events.addEvents(totalResults);
     						document.getElementById("imagebox").style.display = "block";
-    						document.getElementById("itembox").style.display = "block"	
+    						document.getElementById("itembox").style.display = "block";	
     		   			}
     				}, query:query, startIndex:0});
     		}
