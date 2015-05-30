@@ -10,13 +10,13 @@ define(["ajaxcall", "layout","events"], function (ajaxcall, layout,events) {
     			ajaxcall.getData({callback:
     				function(response) { 
     					if (response === "error") { 
-    						if (document.getElementById("itembox").style.display != "block") {
+    						if (document.getElementById("itembox").style.display !== "block") {
     					    	document.getElementById("itembox").style.display = "block";
     					    }
     						document.getElementById("itembox").innerHTML = '<li><h4>Unable to connect to API server</h4>';
     					}
     					else if (response === "loading") {
-    						if (document.getElementById("itembox").style.display != "block") {
+    						if (document.getElementById("itembox").style.display !== "block") {
     					    	document.getElementById("itembox").style.display = "block";
     					    }
     						document.getElementById("itembox").innerHTML = '<li><h4>Loading...</h4>';
