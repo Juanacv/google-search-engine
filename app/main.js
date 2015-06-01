@@ -1,6 +1,6 @@
 define(["ajaxcall", "layout","events"], function (ajaxcall, layout,events) {
+	'use strict';
 	var search_button = document.getElementById("search_button");
-	
 	//Event triggered when someone pushes the search button
 	search_button.addEventListener("click", function() {
 		var query = document.getElementById("query").value;
