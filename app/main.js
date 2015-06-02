@@ -22,7 +22,7 @@ define(["ajaxcall", "layout","events"], function (ajaxcall, layout,events) {
     						document.getElementById("itembox").innerHTML = '<li><h4>Loading...</h4>';
     					}
     					else if (response !== "error" && response !== "loading") {
-    						var totalResults = layout.printIt(response, 1, 1);
+    						var totalResults = layout.paintIt(response, 1, 1); //paints the web with first results
     						events.addEvents(totalResults);
     						document.getElementById("imagebox").style.display = "block";
     						document.getElementById("itembox").style.display = "block";	
