@@ -1,4 +1,4 @@
-define(["ajaxcall", "layout","events","getpage"], function (ajaxcall, layout, events, getpage) {
+define(["events","getpage"], function (events, getpage) {
 	'use strict';
 	var searchButton = document.getElementById("search_button");
 	//Event triggered when someone pushes the search button
