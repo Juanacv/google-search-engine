@@ -4,7 +4,7 @@ It shows up to 4 results with their images asociated, in two boxes.
 
 It's a free account, so the limit is 100 request per day.
 
-It's customized to search in all the web, instead of a given web or webs.
+It's customized to search in all the web.
 
 FILES:
 app.js File for configuring require.js path
