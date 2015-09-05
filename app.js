@@ -4,9 +4,9 @@
 // except for 'app' ones, which are in a sibling
 // directory.
 requirejs.config({
-    baseUrl: 'app/js',
+    baseUrl: 'app',
     paths: {
-        app: '../'
+        app: 'js'
     }
 });
 
