@@ -1,6 +1,6 @@
 SEARCH PAGE USING GOOGLE CUSTOM SEARCH API
 
-It shows up to 4 results with their images asociated, in two boxes.
+It shows up to 10 results with their images asociated, in two boxes.
 
 It's a free account, so the limit is 100 request per day.
 
@@ -8,12 +8,12 @@ It's customized to search in all the web.
 
 FILES:
 app.js File for configuring require.js path
-app\main.js Main code for retrieving the data from the search and put it in the web.
+app\js\main.js Main code for retrieving the data from the search and put it in the web.
+app\js\ajaxcall.js Makes the ajax call to Google API, and gets the search result, given a query string
+app\js\getpage.js Ajax call logic when a pagination link is clicked
+app\js\layout.js Puts the data on the web, formatted, and adds the pagination links
+app\js\events.js Adds the events related to anchors in the pagination links
 css\bootstrap.min.css Bootstrap css library.
 css\style.css Custom styles for the web
-lib\ajaxcall.js Makes the ajax call to Google API, and gets the search result, given a query string
-lib\getpage.js Ajax call logic when a pagination link is clicked
-lib\layout.js Puts the data on the web, formatted, and adds the pagination links
-lib\events.js Adds the events related to anchors in the pagination links
 lib\require.js The require.js library
 index.html the page html markup
