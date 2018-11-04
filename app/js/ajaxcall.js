@@ -1,9 +1,9 @@
 define(function () {
 	'use strict';
 	//API id
-	var API_ID = "AIzaSyAOkeze_9eWjH5XkE5m3N0iptgzRPeiAR4",
+	var API_ID = "YOUR_API_KEY",
 	//Custom Search Identifier
-	CX = "018042016272617285396:zbz1kqzxosw",
+	CX = "YOU_CUSTOM_SEARCH_IDENTIFIER",
 	MAX_ITEMS = 10;
 	function getData(options) {
 		//Url with the api
